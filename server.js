@@ -8,9 +8,9 @@ const server = http.createServer((req, res) => {
     if (parsedUrl.pathname === '/' && req.method === 'GET') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         const profile = {
-            name: 'John Doe',
-            age: 30,
-            bio: 'Web Developer',
+            name: 'Vcitor',
+            age: 22,
+            bio: 'Cloud Computing',
             image: 'https://storage.cloud.google.com/profil_ku/foto%20bangkit.PNG' // URL untuk gambar
         };
         res.end(JSON.stringify(profile));
